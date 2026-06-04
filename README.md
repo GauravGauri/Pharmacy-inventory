@@ -169,8 +169,7 @@ Detailed settings for deploying this monorepo project:
 ### Frontend Setup (Vercel Project)
 - **Root Directory**: `frontend`
 - **Framework Preset**: `Next.js`
-- **Environment Variables**:
-  - `NEXT_PUBLIC_API_URL` = `https://your-pharmaflow-backend.onrender.com/api`
+  
 
 ---
 
