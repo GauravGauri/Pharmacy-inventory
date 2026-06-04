@@ -48,6 +48,9 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 });
 
 // Database Connection & Server Startup
+const maskedURI = MONGODB_URI.replace(/:([^@]+)@/, ':****@');
+console.log(`Connecting to database: ${maskedURI}`);
+
 mongoose
   .connect(MONGODB_URI)
   .then(() => {
